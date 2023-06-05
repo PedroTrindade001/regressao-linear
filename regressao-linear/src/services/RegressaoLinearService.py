@@ -24,6 +24,10 @@ def analisarPerfomance(treinamento):
     modelo.fit(treinamento[0], treinamento[1])
     print('Avaliação de performance: {}'.format(modelo.score(treinamento[0], treinamento[1])))
 
+    # Margem de erro da previsão.
+    previsoes = modelo.predict(treinamento[2])
+    print('RMSE', np.sqrt(metrics.mean_squared_error(treinamento[3], previsoes)))
+
     #Plot do Gráfico com Previsão!
     plt.figure(figsize=(10, 5))
     plt.scatter(treinamento[0], treinamento[1])
@@ -32,8 +36,3 @@ def analisarPerfomance(treinamento):
     plt.ylabel('Limite')
     plt.plot(treinamento[2], modelo.predict(treinamento[2]), color='red')
     plt.show(block=True)
-
-    #Margem de erro da previsão.
-    previsoes = modelo.predict(treinamento[2])
-    print('RMSE', np.sqrt( metrics.mean_squared_error(treinamento[3], previsoes)))
-
