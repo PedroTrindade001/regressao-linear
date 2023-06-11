@@ -4,6 +4,11 @@
 ## Guilherme dos Reis Freitas RA: 125111356415
 ## Pedro Trindade Francisco RA: 125111346772
 
+### Requisitos:
+Python >= 3  
+### Executar no terminal:  
+pip install matplotlib
+
 ### Descrição :page_with_curl:
 
 O projeto é uma aplicação que deve conter as seguintes características:
