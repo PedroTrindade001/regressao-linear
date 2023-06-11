@@ -7,7 +7,11 @@
 ### Requisitos:
 Python >= 3  
 ### Executar no terminal:  
-pip install matplotlib
+##Requisitos:
+pip install scikit-learn  
+pip install sklearn  
+pip install matplotlib  
+pip install pandas  
 
 ### Descrição :page_with_curl:
 
