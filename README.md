@@ -6,3 +6,16 @@
 
 ### Descrição :page_with_curl:
 
+O projeto é uma aplicação que deve conter as seguintes características:
+
+· Carregar e ler arquivos .csv, xlsx e de um banco de dados;
+
+· Conter ao menos um algoritmo de aprendizado de máquina;
+
+· Gerar uma visualização para o resultado de acordo com os tipos abaixo:
+
+o Agrupamento: gerar a visualização Scatter;
+
+o Classificação: gerar a matriz de confusão;
+
+o Regressão: gerar a visualização da linha de saída.
