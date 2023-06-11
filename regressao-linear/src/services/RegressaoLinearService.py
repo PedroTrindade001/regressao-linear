@@ -5,17 +5,15 @@ from sklearn.model_selection import train_test_split
 from sklearn import metrics
 
 def treinarRegressaoLinear(arrays):
+    # Dividir os dados em conjuntos de treinamento e teste
     x_treinamento, x_teste, y_treinamento, y_teste = train_test_split(
         arrays[0],
         arrays[1],
         test_size=0.20
     )
     print('Número de Dados usados para treinamento: {1}\nNúmero de Dados não utilizadas para treinamento: {0}'.format(len(x_treinamento), len(x_teste)))
-    treinamento = []
-    treinamento.append(x_treinamento)
-    treinamento.append(y_treinamento)
-    treinamento.append(x_teste)
-    treinamento.append(y_teste)
+
+    treinamento = [x_treinamento, y_treinamento, x_teste, y_teste]
     analisarPerfomance(treinamento)
 
 def analisarPerfomance(treinamento):
@@ -26,7 +24,7 @@ def analisarPerfomance(treinamento):
 
     # Margem de erro da previsão.
     previsoes = modelo.predict(treinamento[2])
-    print('RMSE', np.sqrt(metrics.mean_squared_error(treinamento[3], previsoes)))
+    print('RMSE/Margem de Erro', np.sqrt(metrics.mean_squared_error(treinamento[3], previsoes)))
 
     #Plot do Gráfico com Previsão!
     plt.figure(figsize=(10, 5))
