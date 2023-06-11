@@ -7,7 +7,7 @@
 ### Requisitos:
 Python >= 3  
 ### Executar no terminal (main):  
-venv\Scripts\activate
+venv\Scripts\activate  
 pip install scikit-learn  
 pip install sklearn  
 pip install matplotlib  
