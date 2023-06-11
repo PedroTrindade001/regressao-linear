@@ -7,7 +7,6 @@
 ### Requisitos:
 Python >= 3  
 ### Executar no terminal:  
-##Requisitos:
 pip install scikit-learn  
 pip install sklearn  
 pip install matplotlib  
